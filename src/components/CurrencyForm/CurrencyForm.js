@@ -23,26 +23,18 @@ const CurrencyForm = ({ action }) => {
     <form onSubmit={handleSubmit} className={styles.form}>
       <label>
         <span>Amount:</span>
-        <TextInput 
-          data-testid="amount"
-          type="number" 
-          value={amount} 
-          onChange={e => setAmount(e.target.value)} />
+        <TextInput type="number" value={amount} onChange={e => setAmount(e.target.value)} />
       </label>
       <label>
         <span>From</span>
-        <Select 
-          data-testid="value1"
-          onChange={e => setFrom(e.target.value)}>
+        <Select onChange={e => setFrom(e.target.value)}>
           <option value="PLN">PLN</option>
           <option value="USD">USD</option>
         </Select>
       </label>
       <label>
         <span>To</span>
-        <Select 
-          data-testid="value2"
-          onChange={e => setTo(e.target.value)}>
+        <Select onChange={e => setTo(e.target.value)}>
           <option value="PLN">PLN</option>
           <option value="USD">USD</option>
         </Select>
