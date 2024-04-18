@@ -25,5 +25,6 @@ describe('ConvertPLNtoUSD', () => {
     expect(convertPLNToUSD(-2)).toBe('$0.00');
     expect(convertPLNToUSD(-4)).toBe('$0.00');
     expect(convertPLNToUSD(-1)).toBe('$0.00');
+    expect(convertPLNToUSD(-3)).toBe('$0.00');
   });
 });
